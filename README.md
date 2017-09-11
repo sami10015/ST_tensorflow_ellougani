@@ -4,7 +4,7 @@ This course is an introduction to the major problems, techniques, and issues aro
 
 ## Accounts
 
-* [Kaggle](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
+* [Kaggle](https://www.kaggle.com/sami10015)
 
 ## Built With
 
