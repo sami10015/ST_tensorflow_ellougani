@@ -22,9 +22,9 @@ take the derivate and equal it to zero to solve for critical points. This is $24
 6 to prove that the value that maximizes x is equal to 4.
 
 \section{Solution to Problem 2}
-The problem was to find the value for x that maximizes g(x) where g(x) = $-3x^2 + 24x - 30$. First, you need to 
-take the derivate and equal it to zero to solve for critical points. This is $24-6x = 0$. Now, we subtract 24 and then divide by negative
-6 to prove that the value that maximizes x is equal to 4.
+The problem was to find the partial derivate of f(x) where f(x) = $3x_0^3 - 2x_0x_1^2 + 4x_1 - 8$, with respect to $x_0$ and $x_1$. The first step
+is to treat $x_0$ and $x_1$ as constants. Then, you want to apply the Sum/Difference rule. Lastly, you want to simplify, resulting in:
+$9x^2-4x_0x$
 
 \section{Solution to Problem 3}
 \subsection{} 
@@ -70,7 +70,7 @@ b = tf.constant(b)
 with tf.Session() as sess:
 	print(tf.matmul(a,b).eval())
 \end{lstlisting}
-Here are my reults from the command line:
+Here are my results from the command line:
 
 \begin{lstlisting}
 > python matrixMult.py
@@ -84,6 +84,8 @@ Here are my reults from the command line:
 \end{lstlisting}
 
 \section{Solution to Problem 4}
-
+For Problem 4, we supposed that random variable $X$ is in $N(2,3)$. Therefore, X has a .5 chance of being 2, and a .5 chance of being 3.
+To find the expected value of X, we multiply the probability of each number, and then add them together. This then results in:
+$X = 2.5$
 
 \end{document}
