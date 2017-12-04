@@ -1,0 +1,73 @@
+\documentclass[a4paper]{article}
+
+%% Language and font encodings
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+
+%% Sets page size and margins
+\usepackage[a4paper,top=3cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+%% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+\title{Homework 03}
+\author{Sami Ellougani}
+\date{November 27th, 2017}
+
+\begin{document}
+\maketitle
+
+\section{Overview}
+We were tasked to use our dataset and test which neuron combination, and learning rate would give the best accuracy. Unfortunately, I was unable to load in our dataset as there were several issues, so I used the MNIST dataset to still gain a solid understanding of how this network works.
+
+\section{Part One}
+\subsection{Results}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{||c c||} 
+ \hline
+ Neuron Combination & Accuracy \\ [0.5ex] 
+ \hline\hline
+ 32, 32, 32 & 0.7821 \\ 
+ 64, 32, 64 & 0.9102 \\
+ 32, 64, 128 & 0.8349 \\
+ 512, 128, 64 & 0.9231 \\
+ 256, 512, 512 & 0.9502 \\ 
+ 64, 256, 512 & 0.9291 \\
+ 32, 256, 512 & 0.8572 \\
+ 64, 256, 32 & 0.8881 \\
+ 32, 128, 256 & 0.8762 \\ 
+ 64, 128, 256 & 0.8422 \\[1ex]
+ \hline
+\end{tabular}
+\label{table:1}
+\end{table}
+
+\subsection{Discussion}
+The combination of neurons that gave me the best accuracy was 256, 512, 512. My best assumption as to why these combination gave me the best accuracy is simply because it has the most neurons out of every single combination I used. 
+
+\section{Part Two}
+\subsection{Results - Using 256, 512, 512}
+\begin{table}[h!]
+\centering
+\begin{tabular}{||c c||} 
+ \hline
+Learning Rate & Accuracy \\ [0.5ex] 
+ \hline\hline
+ .00001 & 0.1301 \\ 
+ .01 & 0.6319 \\
+ .1 & 0.6987 \\
+ \hline
+\end{tabular}
+\label{table:1}
+\end{table}
+
+\subsection{Discussion}
+The best learning rate that worked with my neuron combination was 0.1. My opinion on this is that this learning rate was the best because there were already so many hidden units, that the learning rate did not need to be so low to gain the best accuracy for the network.
+
+\end{document}
